@@ -1,7 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/form.css";
 
 const SupplierLogin = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    // direct dashboard open (static login)
+    navigate("/supplier-dashboard");
+  };
+
   return (
     <div className="form-page">
       <div className="form-card">
@@ -16,9 +24,9 @@ const SupplierLogin = () => {
         <label>Password</label>
         <input type="password" placeholder="Enter your password" />
 
-        <button className="primary-btn">Sign In</button>
-
-        
+        <button className="primary-btn" onClick={handleLogin}>
+          Sign In
+        </button>
       </div>
     </div>
   );
