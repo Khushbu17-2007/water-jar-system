@@ -3,6 +3,9 @@ import Home from "./pages/Home";
 import OrderForm from "./pages/OrderForm";
 import SupplierLogin from "./pages/SupplierLogin";
 import DeliveryLogin from "./pages/DeliveryLogin";
+import Customers from "./pages/Customers";
+import Orders from "./pages/Orders";
+
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
         <Route path="/order" element={<OrderForm />} />
         <Route path="/supplier-login" element={<SupplierLogin />} />
         <Route path="/delivery-login" element={<DeliveryLogin />} />
+        <Route path="/customers" element={<Customers />} />
+        <Route path="/orders" element={<Orders />} />
+
       </Routes>
     </BrowserRouter>
   );
