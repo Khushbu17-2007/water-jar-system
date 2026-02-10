@@ -1,0 +1,94 @@
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: #ffffff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #0b1320;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #5f6c7b;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Buttons container */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Common button */
+.btn {
+  padding: 12px 22px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* Primary button */
+.primary {
+  background: #0077d9;
+  color: white;
+}
+
+.primary:hover {
+  background: #005bb5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 119, 217, 0.3);
+}
+
+/* Outline button */
+.outline {
+  background: white;
+  border: 1px solid #d0d7de;
+  color: #0b1320;
+}
+
+.outline:hover {
+  background: #559ab1;
+  color: white;
+  border-color: #559ab1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 119, 217, 0.2);
+}
+
+/* Click effect */
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 220px;
+  }
+}
