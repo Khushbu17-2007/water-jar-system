@@ -18,3 +18,9 @@ a {
 button {
   cursor: pointer;
 }
+
+
+body {
+  margin: 0;
+  overflow: hidden; /* prevents double scrollbar */
+}

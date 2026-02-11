@@ -1,7 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/form.css";
 
+
 const DeliveryLogin = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/delivery-dashboard");
+  };
+
   return (
     <div className="form-page">
       <div className="form-card">
@@ -16,8 +24,9 @@ const DeliveryLogin = () => {
         <label>Password</label>
         <input type="password" placeholder="Enter your password" />
 
-        <button className="primary-btn">Sign In</button>
-
+        <button className="primary-btn" onClick={handleLogin}>
+          Sign In
+        </button>
       </div>
     </div>
   );
